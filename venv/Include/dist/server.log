@@ -1,0 +1,24 @@
+INFO 03/03 09:51:21 o.b.p.Main           - Starting BrowserMob Proxy version 2.0-beta-6
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/C:/Users/Administrator/Downloads/browsermob-proxy-2.0-beta-6/lib/guice-3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+INFO 03/03 09:51:22 o.e.j.u.log          - jetty-7.3.0.v20110203
+INFO 03/03 09:51:22 o.e.j.u.log          - started o.e.j.s.ServletContextHandler{/,null}
+WARN 03/03 09:51:22 o.e.j.u.log          - FAILED SelectChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use: bind
+WARN 03/03 09:51:22 o.e.j.u.log          - FAILED org.eclipse.jetty.server.Server@2141a12: java.net.BindException: Address already in use: bind
+Exception in thread "main" java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:469)
+	at java.base/sun.nio.ch.Net.bind(Net.java:458)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:220)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:88)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.open(SelectChannelConnector.java:162)
+	at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:356)
+	at org.eclipse.jetty.server.nio.SelectChannelConnector.doStart(SelectChannelConnector.java:240)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:269)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:55)
+	at org.browsermob.proxy.Main.main(Main.java:46)
+^C
